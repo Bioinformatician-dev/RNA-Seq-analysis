@@ -40,11 +40,10 @@ sudo mv Trimmomatic-0.39 /usr/local/bin/Trimmomatic
   
   ```bash
  
-  if (!requireNamespace("BiocManager", quietly = TRUE)) {
-  install.packages("BiocManager")}
+   if (!requireNamespace("BiocManager", quietly = TRUE)) {
+      install.packages("BiocManager")}
  
-
-BiocManager::install(c("DESeq2", "clusterProfiler", "org.Hs.eg.db"))
-install.packages(c("ggplot2", "pheatmap"))
+     BiocManager::install(c("DESeq2", "clusterProfiler", "org.Hs.eg.db"))
+     install.packages(c("ggplot2", "pheatmap"))
  
  ```
