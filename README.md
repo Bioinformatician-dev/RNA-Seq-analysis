@@ -39,7 +39,12 @@ sudo mv Trimmomatic-0.39 /usr/local/bin/Trimmomatic
 *  Install R and Bioconductor for DESeq2 or edgeR 
   
   ```bash
-  install.packages("BiocManager")
-  BiocManager::install("DESeq2")
-  BiocManager::install("edgeR")
+ 
+  if (!requireNamespace("BiocManager", quietly = TRUE)) {
+  install.packages("BiocManager")}
+ 
+
+BiocManager::install(c("DESeq2", "clusterProfiler", "org.Hs.eg.db"))
+install.packages(c("ggplot2", "pheatmap"))
+ 
  ```
