@@ -20,9 +20,7 @@ Make sure you have the following tools installed:
 * Install Trimmomatic
 
 ```bash
-wget http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic-0.39.zip
-unzip Trimmomatic-0.39.zip
-sudo mv Trimmomatic-0.39 /usr/local/bin/Trimmomatic
+conda install bioconda::trimmomatic
 ```
 
 * Install STAR
