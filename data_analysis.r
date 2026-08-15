@@ -1,4 +1,4 @@
-# Step 1: Install and Load Required Packages
+# Step 1: Install and Load Required Packages.
 if (!requireNamespace("BiocManager", quietly = TRUE)) {
   install.packages("BiocManager")
 }
